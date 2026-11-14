@@ -15,8 +15,8 @@ flavors:
     sklearn_version: 1.5.2
 mlflow_version: 2.19.0
 model_size_bytes: 4803762
-model_uuid: cf52d6f9d8bb4bd1a18029892d8e486b
-run_id: 1f1b3a4c579543418eebaad511522915
+model_uuid: d628c26fa2154fa6b6856c056030e782
+run_id: 742433d5c6b54c2daa976bbb2157444a
 saved_input_example_info:
   artifact_path: input_example.json
   pandas_orient: split
@@ -77,4 +77,4 @@ signature:
     "name": "job_unskilled resident", "required": true}]'
   outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
   params: null
-utc_time_created: '2026-11-14 16:16:40.080482'
+utc_time_created: '2026-11-14 16:22:24.659097'
