@@ -1,0 +1,80 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.2
+mlflow_version: 2.19.0
+model_size_bytes: 4803762
+model_uuid: cf52d6f9d8bb4bd1a18029892d8e486b
+run_id: 1f1b3a4c579543418eebaad511522915
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "months_loan_duration", "required": true},
+    {"type": "double", "name": "amount", "required": true}, {"type": "double", "name":
+    "installment_rate", "required": true}, {"type": "double", "name": "residence_history",
+    "required": true}, {"type": "double", "name": "age", "required": true}, {"type":
+    "double", "name": "existing_credits", "required": true}, {"type": "double", "name":
+    "dependents", "required": true}, {"type": "double", "name": "checking_balance_1
+    - 200 DM", "required": true}, {"type": "double", "name": "checking_balance_< 0
+    DM", "required": true}, {"type": "double", "name": "checking_balance_> 200 DM",
+    "required": true}, {"type": "double", "name": "checking_balance_unknown", "required":
+    true}, {"type": "double", "name": "credit_history_critical", "required": true},
+    {"type": "double", "name": "credit_history_delayed", "required": true}, {"type":
+    "double", "name": "credit_history_fully repaid", "required": true}, {"type": "double",
+    "name": "credit_history_fully repaid this bank", "required": true}, {"type": "double",
+    "name": "credit_history_repaid", "required": true}, {"type": "double", "name":
+    "purpose_business", "required": true}, {"type": "double", "name": "purpose_car
+    (new)", "required": true}, {"type": "double", "name": "purpose_car (used)", "required":
+    true}, {"type": "double", "name": "purpose_domestic appliances", "required": true},
+    {"type": "double", "name": "purpose_education", "required": true}, {"type": "double",
+    "name": "purpose_furniture", "required": true}, {"type": "double", "name": "purpose_others",
+    "required": true}, {"type": "double", "name": "purpose_radio/tv", "required":
+    true}, {"type": "double", "name": "purpose_repairs", "required": true}, {"type":
+    "double", "name": "purpose_retraining", "required": true}, {"type": "double",
+    "name": "savings_balance_101 - 500 DM", "required": true}, {"type": "double",
+    "name": "savings_balance_501 - 1000 DM", "required": true}, {"type": "double",
+    "name": "savings_balance_< 100 DM", "required": true}, {"type": "double", "name":
+    "savings_balance_> 1000 DM", "required": true}, {"type": "double", "name": "savings_balance_unknown",
+    "required": true}, {"type": "double", "name": "employment_length_0 - 1 yrs", "required":
+    true}, {"type": "double", "name": "employment_length_1 - 4 yrs", "required": true},
+    {"type": "double", "name": "employment_length_4 - 7 yrs", "required": true}, {"type":
+    "double", "name": "employment_length_> 7 yrs", "required": true}, {"type": "double",
+    "name": "employment_length_unemployed", "required": true}, {"type": "double",
+    "name": "personal_status_divorced male", "required": true}, {"type": "double",
+    "name": "personal_status_female", "required": true}, {"type": "double", "name":
+    "personal_status_married male", "required": true}, {"type": "double", "name":
+    "personal_status_single male", "required": true}, {"type": "double", "name": "other_debtors_co-applicant",
+    "required": true}, {"type": "double", "name": "other_debtors_guarantor", "required":
+    true}, {"type": "double", "name": "other_debtors_none", "required": true}, {"type":
+    "double", "name": "property_building society savings", "required": true}, {"type":
+    "double", "name": "property_other", "required": true}, {"type": "double", "name":
+    "property_real estate", "required": true}, {"type": "double", "name": "property_unknown/none",
+    "required": true}, {"type": "double", "name": "installment_plan_bank", "required":
+    true}, {"type": "double", "name": "installment_plan_none", "required": true},
+    {"type": "double", "name": "installment_plan_stores", "required": true}, {"type":
+    "double", "name": "housing_for free", "required": true}, {"type": "double", "name":
+    "housing_own", "required": true}, {"type": "double", "name": "housing_rent", "required":
+    true}, {"type": "double", "name": "telephone_none", "required": true}, {"type":
+    "double", "name": "telephone_yes", "required": true}, {"type": "double", "name":
+    "foreign_worker_no", "required": true}, {"type": "double", "name": "foreign_worker_yes",
+    "required": true}, {"type": "double", "name": "job_mangement self-employed", "required":
+    true}, {"type": "double", "name": "job_skilled employee", "required": true}, {"type":
+    "double", "name": "job_unemployed non-resident", "required": true}, {"type": "double",
+    "name": "job_unskilled resident", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2026-11-14 16:16:40.080482'
